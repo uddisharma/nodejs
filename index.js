@@ -1,4 +1,5 @@
 const fs = require('fs');
 const a = fs.writeFileSync('test.txt', 'hello world');
 
-console.log(a)
+const b = fs.readFileSync('test.txt', 'utf-8');
+console.log(b)
